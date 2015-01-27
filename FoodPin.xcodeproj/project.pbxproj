@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9255544A1A7825E1001392DA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925554491A7825E1001392DA /* CustomTableViewCell.swift */; };
 		926CCDEB1A78155F00E673AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926CCDEA1A78155F00E673AD /* AppDelegate.swift */; };
 		926CCDF01A78155F00E673AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926CCDEE1A78155F00E673AD /* Main.storyboard */; };
 		926CCDF21A78155F00E673AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926CCDF11A78155F00E673AD /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		925554491A7825E1001392DA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		926CCDE51A78155F00E673AD /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CCDE91A78155F00E673AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926CCDEA1A78155F00E673AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		926CCDFA1A78155F00E673AD /* FoodPinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		926CCDFF1A78155F00E673AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926CCE001A78155F00E673AD /* FoodPinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinTests.swift; sourceTree = "<group>"; };
-		926CCE0A1A78163400E673AD /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		926CCE0A1A78163400E673AD /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantTableViewController.swift; path = ../RestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,6 @@
 		926CCDDC1A78155F00E673AD = {
 			isa = PBXGroup;
 			children = (
-				926CCE0A1A78163400E673AD /* RestaurantTableViewController.swift */,
 				926CCDE71A78155F00E673AD /* FoodPin */,
 				926CCDFD1A78155F00E673AD /* FoodPinTests */,
 				926CCDE61A78155F00E673AD /* Products */,
@@ -78,6 +79,8 @@
 		926CCDE71A78155F00E673AD /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				925554491A7825E1001392DA /* CustomTableViewCell.swift */,
+				926CCE0A1A78163400E673AD /* RestaurantTableViewController.swift */,
 				926CCDEA1A78155F00E673AD /* AppDelegate.swift */,
 				926CCDEE1A78155F00E673AD /* Main.storyboard */,
 				926CCDF11A78155F00E673AD /* Images.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9255544A1A7825E1001392DA /* CustomTableViewCell.swift in Sources */,
 				926CCE0B1A78163400E673AD /* RestaurantTableViewController.swift in Sources */,
 				926CCDEB1A78155F00E673AD /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				926CCE061A78155F00E673AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		926CCE071A78155F00E673AD /* Build configuration list for PBXNativeTarget "FoodPinTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				926CCE091A78155F00E673AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
