@@ -18,8 +18,12 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurantTypes = ["Coffee & Tea Shop", "Cafe", "Tea House", "Austrian / Causual Drink", "French", "Bakery", "Bakery", "Chocolate", "Cafe", "American / Seafood", "American", "American", "Breakfast & Brunch", "Coffee & Tea", "Coffee & Tea", "Latin American", "Spanish", "Spanish", "Spanish", "British", "Thai"]
     
+    var restaurantIsVisited = [Bool](count: 21, repeatedValue: false)
+    
      override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         let optionMenu = UIAlertController(title: nil, message: "What would you like to do?", preferredStyle: .ActionSheet)
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         
         //Add actions to menu
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
@@ -37,6 +41,7 @@ class RestaurantTableViewController: UITableViewController {
             
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .Checkmark
+            self.restaurantIsVisited[indexPath.row] = true
             })
         optionMenu.addAction(isVisitedAction)
         
@@ -57,6 +62,13 @@ class RestaurantTableViewController: UITableViewController {
         
         cell.thumbnailImageView?.layer.cornerRadius = cell.thumbnailImageView.frame.size.width / 2
         cell.thumbnailImageView?.clipsToBounds = true
+        
+        // restaurantIsVisited check
+        if restaurantIsVisited[indexPath.row] {
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .None
+        }
         
         
         return cell
